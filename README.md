@@ -1,2 +1,2 @@
-# simple-fitbit
-Simple Fitbit Watchface
+# springtime-fitbit
+A Springtime Fitbit Watchface for Ionic, Versa and Versa Lite devices. 
