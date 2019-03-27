@@ -1,0 +1,65 @@
+.background {
+  viewport-fill: red;
+}
+
+#myLabel {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 45%+40;
+  fill: lightcoral;
+}
+
+#myHR   {
+  font-size: 24;
+  font-family: System-Regular;
+  text-length: 25;
+  text-anchor: start;
+  x: 10%;
+  y: 30%+15;
+  fill: teal;
+}
+
+
+#mySteps  {
+  font-size: 24;
+  font-family: System-Regular;
+  text-length: 25;
+  text-anchor: start;
+  x: 10%;
+  y: 21%+15;
+  fill: teal;
+}
+
+#myDate  {
+  font-size: 30;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: -5%+40;
+  fill: lightcoral;
+}
+
+#myActiveminutes   {
+  font-size: 24;
+  font-family: System-Regular;
+  text-length: 25;
+  text-anchor: start;
+  x: 82%;
+  y: 22%+40;
+  fill: teal;
+}
+
+#myCalories   {
+  font-size: 24;
+  font-family: System-Regular;
+  text-length: 25;
+  text-anchor: start;
+  x: 82%;
+  y: 13%+40;
+  fill: teal;
+}
+
