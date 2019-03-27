@@ -1,0 +1,21 @@
+  <!-- Background -->
+  <image href="background.jpg" load="sync" />
+  
+  <text id="myLabel" />
+ 
+  <text id="myHR"/> 
+  <image x="1%" y="22%+15" fill="red" href="heart.png" height="24" width="24" load="sync" ></image>
+  
+  <text id="mySteps"/>
+  <image href="steps.png" x="2%" y="13%+15" width="24" height="24" fill="gray" load="sync" />
+  
+  <text id="myActiveminutes"/>
+  <image href="active.png" x="75%" y="24%+15" width="24" height="24" fill="orange" load="sync" />
+  
+  <text id="myCalories"/>
+  <image href="calories.png" x="75%" y="14%+15" width="24" height="24" fill="yellow" load="sync" />
+  
+  <image href="rose.png" x="66%" y="45%+15" width="85" height="85" load="sync" />
+     
+  <text id="myDate" /> 
+</svg>
