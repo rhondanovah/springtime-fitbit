@@ -10,8 +10,8 @@
   <text id="mySteps"/>
   <image href="steps.png" x="2%" y="14%+15" width="24" height="24" fill="gray" load="sync" />
   
-  <text id="myActiveminutes"/>
-  <image href="active.png" x="70%" y="24%+15" width="24" height="24" fill="orange" load="sync" />
+  <text id="myAzm"/>
+  <image href="azm.png" x="70%" y="24%+15" width="22" height="22" fill="orange" load="sync" />
   
   <text id="myCalories"/>
   <image href="calories.png" x="70%" y="14%+15" width="24" height="24" fill="yellow" load="sync" />
