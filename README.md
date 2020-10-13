@@ -3,7 +3,7 @@ A  digital clockface for Fitbit Ionic, Versa and Versa Lite devices. Open Source
 
 Includes Heart Rate, Steps, Calories and Active Minutes
 
-<b>Versa & Versa Light:</b>
+<b>Versa & Versa Light Devices:</b>
 
 <img src = "https://github.com/rhondachill/springtime-fitbit/blob/master/Versa.png">
 
