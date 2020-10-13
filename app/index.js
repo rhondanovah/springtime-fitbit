@@ -3,6 +3,30 @@ import document from "document";
 import { preferences } from "user-settings";
 import * as util from "../common/utils";
 
+//ACTIVE ZONE REQUEST PERMISSIONS
+import { me as appbit } from "appbit";
+import { primaryGoal } from "user-activity";
+
+if (appbit.permissions.granted("access_activity")) {
+   console.log(`User's primary activity goal is ${primaryGoal}`);
+}
+
+//AZM
+import { goals, today } from "user-activity";
+console.log(`${goals.activeZoneMinutes.total} activeZoneMinutes Goal`);
+
+goals.addEventListener("reachgoal", (evt) => {
+   if (today.adjusted.activeZoneMinutes.total >= goals.activeZoneMinutes.total)
+   {
+     // AZM Goal has been met
+  }
+});
+
+console.log(`${today.local.activeZoneMinutes.fatBurn}`);
+console.log(`${today.local.activeZoneMinutes.cardio}`);
+console.log(`${today.local.activeZoneMinutes.peak}`);
+console.log(`${today.adjusted.activeZoneMinutes.total}`);
+
 
 // Update the clock every second
 clock.granularity = "seconds";
@@ -57,14 +81,14 @@ import * as battery from "battery"
 let myHR = document.getElementById("myHR");
 let mySteps = document.getElementById("mySteps");
 let myCalories = document.getElementById("myCalories");
-let myActiveminutes = document.getElementById("myActiveminutes")
+let myAzm = document.getElementById("myAzm")
 let myFloors = document.getElementById("myFloors")
 let myTime = document.getElementById("myTime")
 let myDate = document.getElementById("myDate")
 
 
 
-//--- Add step monitor. --------------------------------------------------------------------
+//Add step monitor
 function refresh_mySteps() {
 mySteps.text = "" + today.adjusted.steps
   
@@ -72,18 +96,19 @@ mySteps.text = "" + today.adjusted.steps
 
 setInterval(refresh_mySteps, 100); 
 
-// Add calories --------------------------------------------------------------------------------
+//Add calories
 function refresh_myCalories() {
   myCalories.text = today.adjusted.calories 
 }; 
 
 setInterval(refresh_myCalories, 100);
-// Add Active Mins -------------------------------------------------------------------------------------
 
-function refresh_myactiveMinutes() {
-  myActiveminutes.text = today.adjusted.activeMinutes 
+//REFRESH AZM
+function refresh_myAzm() {
+  myAzm.text = today.adjusted.activeZoneMinutes.total 
 };
-  setInterval(refresh_myactiveMinutes, 1000);
+  setInterval(refresh_myAzm, 1000);
+
 
 //Add floors
 function refresh_myelevationGain() {
